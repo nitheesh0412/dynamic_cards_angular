@@ -1,0 +1,11 @@
+<div class="pricing py-5 ">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4" *ngFor="let version of versions;">
+        <app-pricing [Tier]="version.Tier" [price]="version.price" [not_muted_list]="version.not_muted"
+         [muted_list]="version.muted">
+        </app-pricing>
+    </div>
+  </div>
+</div>
